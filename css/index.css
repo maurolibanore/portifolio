@@ -1,23 +1,114 @@
-.foto-redonda {
-    width: 300px; 
-    height: 300px;  
-    border-radius: 50%; 
-}
-.interface {
-    display: flex;             
-    align-items: normal;    
-    justify-content: space-between;
-    max-width: 1000px;     
-    margin: 0 auto;          
-    padding: 20px 4%;         
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.texto {
-    flex: 1;                
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    background-color: #fff;
 }
 
-.foto {
-    flex: 1;                   
+
+header {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee; 
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    justify-content: flex-end; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4%;
 }
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.hero-section {
+    background-color: #ffffff; 
+    height: 80vh; 
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 4%;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    font-weight: 400;
+    color: #1a1a1a;
+}
+
+.hero-content h1 span {
+    font-weight: 800; 
+    display: block;   
+}
+
+.hero-content p {
+    color: #666;
+    max-width: 500px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.profile-image {
+    flex: 0 0 350px;
+    margin-left: 40px; 
+}
+
+.profile-pic {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+.section-area {
+    padding: 80px 4%; 
+}
+
+.container-column {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
