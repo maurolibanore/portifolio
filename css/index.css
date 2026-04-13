@@ -208,6 +208,60 @@ header {
     align-self: flex-start;
 }
 
+.educacao-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 40px;
+}
+
+.educacao-item {
+    display: flex;
+    gap: 40px;
+    padding: 32px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.educacao-item:first-child {
+    border-top: 1px solid #eee;
+}
+
+.educacao-ano {
+    min-width: 160px;
+    font-size: 14px;
+    color: #888;
+    padding-top: 4px;
+}
+
+.educacao-conteudo h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+}
+
+.educacao-instituicao {
+    font-size: 15px;
+    color: #007bff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.educacao-conteudo p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.educacao-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
 
 
 /* responsividade tablet */
@@ -281,5 +335,14 @@ header {
 
     .contato-form-wrapper {
         width: 100%;
+    }
+
+    .educacao-item {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .educacao-ano {
+        min-width: unset;
     }
 }
