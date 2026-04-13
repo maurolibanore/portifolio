@@ -165,6 +165,50 @@ header {
     height: 22px;
 }
 
+.contato-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.form-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin-top: 8px;
+}
+
+.form-input {
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #333;
+    outline: none;
+    width: 100%;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form-btn {
+    margin-top: 8px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    align-self: flex-start;
+}
+
+
 
 /* responsividade tablet */
 @media (max-width: 900px) {
@@ -229,5 +273,13 @@ header {
 
     .section-area {
         padding: 50px 5%;
+    }
+
+    .contato-wrapper {
+        flex-direction: column;
+    }
+
+    .contato-form-wrapper {
+        width: 100%;
     }
 }
