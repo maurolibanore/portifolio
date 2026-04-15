@@ -13,7 +13,7 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    color: #333;
+    color: #666;
     background-color: #fff;
 }
 
@@ -35,9 +35,9 @@ header {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 700;
-    color: #1a1a1a;
+    color: #000000;
 }
 
 .nav-links {
@@ -49,8 +49,7 @@ header {
 
 .nav-links a {
     text-decoration: none;
-    color: #555;
-    font-weight: 500;
+    color: #666;
 }
 
 .nav-links a:hover {
@@ -98,8 +97,8 @@ header {
 }
 
 .profile-pic {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
 }
 
@@ -256,10 +255,38 @@ header {
 }
 
 .educacao-logo {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     object-fit: contain;
     flex-shrink: 0;
+}
+
+.habilidades-lista { /* responsividade */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center; 
+    margin-top: 40px;
+}
+
+.habilidade-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100px;
+}
+
+.habilidade-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.habilidade-item span {
+    font-size: 15px;
+    color: #666;
+    text-align: center;
 }
 
 
