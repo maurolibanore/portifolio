@@ -29,16 +29,11 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0 4%;
 }
 
-.logo {
-    font-size: 26px;
-    font-weight: 700;
-    color: #000000;
-}
 
 .nav-links {
     list-style: none;
@@ -289,6 +284,64 @@ header {
     text-align: center;
 }
 
+.projetos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.projeto-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #bbb5b5;
+    border-radius: 10px;
+    padding: 24px;
+    width: 300px;
+    gap: 18px;
+}
+
+.projeto-titulo {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.projeto-descricao {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.projeto-linguagem {
+    font-size: 13px;
+    font-weight: 600;
+    color: #007bff;
+    margin-top: 8px;
+    display: block;
+}
+
+.projeto-link {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.projeto-link:hover {
+    background-color: #0056b3;
+}
 
 
 /* responsividade tablet */
