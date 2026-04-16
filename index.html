@@ -13,13 +13,14 @@
     <header>
         <nav class="navbar">
             <ul class="nav-links">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#educacao">Educação</a></li>
-                <li><a href="#experiencia">Experiência</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#home" data-i18n="nav_inicio">Início</a></li>
+                <li><a href="#projetos" data-i18n="nav_projetos">Projetos</a></li>
+                <li><a href="#habilidades" data-i18n="nav_habilidades">Habilidades</a></li>
+                <li><a href="#educacao" data-i18n="nav_educacao">Educação</a></li>
+                <li><a href="#experiencia" data-i18n="nav_experiencia">Experiência</a></li>
+                <li><a href="#contato" data-i18n="nav_contato">Contato</a></li>
             </ul>
+            <button class="lang-btn" id="lang-btn">EN</button>
         </nav>
     </header>
 
@@ -28,7 +29,7 @@
             <div class="container">
                 <div class="hero-content">
                     <h1>Mauro <span>Libanore</span></h1>
-                    <p>Olá! Meu nome é Mauro, sou Estudante de Engenharia de Software no IFPR Paranavaí, movido pela vontade de entender como a tecnologia funciona por dentro. Ainda descobrindo meu caminho na programação, mas com um objetivo claro: empreender e transformar ideias em produtos reais.</p>
+                    <p data-i18n="hero_p1">Olá! Meu nome é Mauro, sou Estudante de Engenharia de Software no IFPR Paranavaí, movido pela vontade de entender como a tecnologia funciona por dentro. Ainda descobrindo meu caminho na programação, mas com um objetivo claro: empreender e transformar ideias em produtos reais.</p>
                 </div>
                 <div class="profile-image">
                     <img src="assets/img/mauro.jpeg" alt="Mauro Libanore" class="profile-pic">
@@ -38,47 +39,48 @@
 
         <section id="projetos" class="section-area">
             <div class="container-column">
-                <h2>Projetos</h2>
+                <h2 data-i18n="nav_projetos">Projetos</h2>
                 <div class="projetos-lista">
 
                     <div class="projeto-card">
                         <img src="assets/img/sicape.png" alt="SICAPE">
                         <div class="projeto-info">
                             <h3 class="projeto-titulo">SICAPE</h3>
-                            <p class="projeto-descricao">Sistema de controle de apenados para o fórum de Terra Rica.</p>
-                            <p class="projeto-linguagem">Projeto Integrador</p>
+                            <p class="projeto-descricao" data-i18n="proj_sicape_desc">Sistema de controle de apenados para o fórum de Terra Rica.</p>
+                            <p class="projeto-linguagem" data-i18n="proj_sicape_ling">Projeto Integrador</p>
                         </div>
-                        <a href="https://www.sicape.software/" target="_blank" class="projeto-link">Ver Projeto</a>
+                        <a href="https://www.sicape.software/" target="_blank" class="projeto-link" data-i18n="proj_sicape_btn">Ver Projeto</a>
                     </div>
 
                     <div class="projeto-card">
                         <img src="assets/img/jogomem.png" alt="Jogo da Memória">
                         <div class="projeto-info">
                             <h3 class="projeto-titulo">Jogo da Memória</h3>
-                            <p class="projeto-descricao">Jogo da memória implementado em aula, primeiro contato com web.</p>
-                            <p class="projeto-linguagem">HTML, CSS, JavaScript</p>
+                            <p class="projeto-descricao" data-i18n="proj_mem_desc">Jogo da memória implementado em aula, primeiro contato com web.</p>
+                            <p class="projeto-linguagem" data-i18n="proj_mem_ling">HTML, CSS, JavaScript</p>
                         </div>
-                        <a href="https://github.com/maurolibanore/jogo-da-memoria" target="_blank" class="projeto-link">Ver no GitHub</a>
+                        <a href="https://github.com/maurolibanore/jogo-da-memoria" target="_blank" class="projeto-link" data-i18n="proj_mem_btn">Ver no GitHub</a>
                     </div>
 
                     <div class="projeto-card">
                         <img src="assets/img/sgop.png" alt="SGOP">
                         <div class="projeto-info">
                             <h3 class="projeto-titulo">SGOP</h3>
-                            <p class="projeto-descricao">Sistema Gestao de Orçamentos e Propostas.</p>
-                            <p class="projeto-linguagem">Java, Banco de Dados</p>
+                            <p class="projeto-descricao"  data-i18n="proj_sgop_desc" >Sistema Gestao de Orçamentos e Propostas.</p>
+                            <p class="projeto-linguagem"  data-i18n="proj_sgop_ling" >Java, Banco de Dados</p>
                         </div>
-                        <a href="https://github.com/maurolibanore/projeto-SGOP/tree/master" target="_blank" class="projeto-link">Ver no GitHub</a>
+                        <a href="https://github.com/maurolibanore/projeto-SGOP/tree/master" target="_blank" class="projeto-link" data-i18n="proj_sgop_btn">Ver no GitHub</a>
                     </div>
 
                 </div>
-                <p class="api-repositorios">Repositórios públicos no GitHub: <strong id="num-repositorios">...</strong></p>
+                <span class="api-repositorios" data-i18n="proj_repos">Repositórios públicos no GitHub: </span> 
+                <strong class="num-rep" id="num-repositorios">...</strong>
             </div>
         </section>
 
         <section id="habilidades" class="section-area">
             <div class="container-column">
-                <h2>Habilidades</h2>
+                <h2 data-i18n="nav_habilidades">Habilidades</h2>
                 <div class="habilidades-lista">
 
                     <div class="habilidade-item">
@@ -127,34 +129,34 @@
 
         <section id="educacao" class="section-area">
             <div class="container-column">
-                <h2>Educação</h2>
+                <h2 data-i18n="nav_educacao">Educação</h2>
                 <div class="educacao-lista">
 
                     <div class="educacao-item">
-                        <div class="educacao-ano">Ensino Superior - 2024 </div>
+                        <div class="educacao-ano" data-i18n="edu_ifpr_ano">Ensino Superior - 2024 </div>
                         <img src="assets/img/ifpr.png" alt="IFPR" class="educacao-logo">
                         <div class="educacao-conteudo">
-                            <h3>Engenharia de Software</h3>
+                            <h3 data-i18n="edu_ifpr_curso">Engenharia de Software</h3>
                             <span class="educacao-instituicao">IFPR — Instituto Federal do Paraná, Paranavaí - PR</span>
-                            <p>Curso superior com foco em desenvolvimento de software, algoritmos, engenharia de sistemas e boas práticas de programação.</p>
+                            <p data-i18n="edu_ifpr_desc">Curso superior com foco em desenvolvimento de software, algoritmos, engenharia de sistemas e boas práticas de programação.</p>
                         </div>
                     </div>
 
                     <div class="educacao-item">
-                        <div class="educacao-ano">Ensino Médio - 2021 </div>
+                        <div class="educacao-ano" data-i18n="edu_dom_ano">Ensino Médio - 2021 </div>
                         <img src="assets/img/dombosco.png" alt="Dom Bosco" class="educacao-logo">
                         <div class="educacao-conteudo">
-                            <h3>Ensino Médio</h3>
+                            <h3 data-i18n="edu_dom_curso">Ensino Médio</h3>
                             <span class="educacao-instituicao">Colégio Dom Bosco, Maringá - PR</span>
-                            <p>Bolsista integral (100%) durante todo o ensino médio.</p>
+                            <p data-i18n="edu_dom_desc">Bolsista integral (100%) durante todo o ensino médio.</p>
                         </div>
                     </div>
 
                     <div class="educacao-item">
-                        <div class="educacao-ano">Ensino Fund. - 2008</div>
+                        <div class="educacao-ano" data-i18n="edu_sab_ano">Ensino Fund. - 2008</div>
                         <img src="assets/img/sabidinho.png" alt="Sabidinho Supremus" class="educacao-logo">
                         <div class="educacao-conteudo">
-                            <h3>Ensino Fundamental</h3>
+                            <h3 data-i18n="edu_sab_curso">Ensino Fundamental</h3>
                             <span class="educacao-instituicao">Escola Sabidinho Supremus, Nova Esperança - PR</span>
                         </div>
                     </div>
@@ -165,15 +167,15 @@
 
         <section id="experiencia" class="section-area">
             <div class="container-column">
-                <h2>Experiência</h2>
+                <h2 data-i18n="nav_experiencia">Experiência</h2>
                 <div class="educacao-lista">
                     <div class="educacao-item">
-                        <div class="educacao-ano">2022 — atualmente</div>
+                        <div class="educacao-ano" data-i18n="exp_ano">2022 — atualmente</div>
                         <img src="assets/img/carricla.png" alt="Carricla" class="educacao-logo">
                         <div class="educacao-conteudo">
-                            <h3>Administrativo e Financeiro</h3>
+                            <h3 data-i18n="exp_cargo">Administrativo e Financeiro</h3>
                             <span class="educacao-instituicao">Carricla Carrocerias Rio Claro - Nova Esperança PR</span>
-                            <p>Responsável por toda a área administrativa e financeira da empresa, incluindo controle de contas, compras/vendas e gestão de RH.</p>
+                            <p data-i18n="exp_desc">Responsável por toda a área administrativa e financeira da empresa, incluindo controle de contas, compras/vendas e gestão de RH.</p>
                         </div>
                     </div>
 
@@ -183,49 +185,53 @@
 
         <section id="contato" class="section-area">
             <section id="contato" class="section-area">
-            <div class="container-column">
-                <div class="contato-wrapper">
-                    <div class="contato-info">
-                        <h2>Contato</h2>
-                        <div class="contato-links">
-                            <div class="contato-item">
-                                <img src="assets/img/email.png" alt="Email" class="contato-icone-img">
-                                <span>maurolibanore10@gmail.com</span>
+                <div class="container-column">
+                    <div class="contato-wrapper">
+                        <div class="contato-info">
+                            <h2 data-i18n="nav_contato">Contato</h2>
+                            <div class="contato-links">
+                                <div class="contato-item">
+                                    <img src="assets/img/email.png" alt="Email" class="contato-icone-img">
+                                    <span>maurolibanore10@gmail.com</span>
+                                </div>
+                                <a href="https://www.linkedin.com/in/mauro-libanore-781ba13b3/" target="_blank" class="contato-icone">
+                                    <img src="assets/img/linkedin.png" alt="LinkedIn" class="contato-icone-img">
+                                    <span>LinkedIn</span>
+                                </a>
+
+                                <a href="https://github.com/maurolibanore" target="_blank" class="contato-icone">
+                                    <img src="assets/img/git.png" alt="GitHub" class="contato-icone-img">
+                                    <span>GitHub</span>
+                                </a>
+
+                                <a href="https://www.instagram.com/mauro_libanore" target="_blank" class="contato-icone">
+                                    <img src="assets/img/instagram.png" alt="Instagram" class="contato-icone-img">
+                                    <span>Instagram</span>
+                                </a>
                             </div>
-                            <a href="https://www.linkedin.com/in/mauro-libanore-781ba13b3/" target="_blank" class="contato-icone">
-                                <img src="assets/img/linkedin.png" alt="LinkedIn" class="contato-icone-img">
-                                <span>LinkedIn</span>
-                            </a>
-
-                            <a href="https://github.com/maurolibanore" target="_blank" class="contato-icone">
-                                <img src="assets/img/git.png" alt="GitHub" class="contato-icone-img">
-                                <span>GitHub</span>
-                            </a>
-
-                            <a href="https://www.instagram.com/mauro_libanore" target="_blank" class="contato-icone">
-                                <img src="assets/img/instagram.png" alt="Instagram" class="contato-icone-img">
-                                <span>Instagram</span>
-                            </a>
                         </div>
+
+                        <form class="contato-form-wrapper" action="https://formspree.io/f/meevqodb" method="post">
+                            <label class="form-label" data-i18n="form_nome">Nome</label>
+                            <input type="text" name="nome" class="form-input">
+                            
+                            <label class="form-label" data-i18n="form_email">Email</label>
+                            <input type="email" name="email" class="form-input">
+
+                            <label class="form-label" data-i18n="form_msg">Mensagem</label>
+                            <textarea type="mensagem" name="mensagem" class="form-input form-textarea"></textarea>
+
+                            <button type="submit" class="form-btn" data-i18n="form_btn">Enviar Mensagem</button>
+                        </form>
+
                     </div>
-
-                    <form class="contato-form-wrapper" action="https://formspree.io/f/meevqodb" method="post">
-                        <label class="form-label">Nome</label>
-                        <input type="text" name="nome" class="form-input">
-                        
-                        <label class="form-label">Email</label>
-                        <input type="email" name="email" class="form-input">
-
-                        <label class="form-label">Mensagem</label>
-                        <textarea type="mensagem" name="mensagem" class="form-input form-textarea"></textarea>
-
-                        <button type="submit" class="form-btn">Enviar Mensagem</button>
-                    </form>
-
                 </div>
-            </div>
-</section>
+            </section>
         </section>
     </main>
+
+    <script src="js/index.js"></script>
+    <script src="js/i18n.js"></script>
+
 </body>
 </html>
