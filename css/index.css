@@ -314,7 +314,6 @@ header {
 .projeto-descricao {
     font-size: 14px;
     color: #666;
-    line-height: 1.5;
 }
 
 .projeto-linguagem {
@@ -322,11 +321,9 @@ header {
     font-weight: 600;
     color: #007bff;
     margin-top: 8px;
-    display: block;
 }
 
 .projeto-link {
-    display: inline-block;
     margin-top: 8px;
     padding: 8px 16px;
     background-color: #007bff;
@@ -340,9 +337,14 @@ header {
 }
 
 .projeto-link:hover {
-    background-color: #0056b3;
+    background-color: #014b99;
 }
 
+.api-repositorios {
+    margin-top: 25px;
+    font-size: 18px;
+    color: #39393a;
+}
 
 /* responsividade tablet */
 @media (max-width: 900px) {
