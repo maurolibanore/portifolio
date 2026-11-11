@@ -86,7 +86,7 @@ function alternarIdioma() {
     idiomaAtual = (idiomaAtual === "pt") ? "en" : "pt";
 
     // atualiza o texto do btn
-    document.getElementById("lang-btn").innerText = (idiomaAtual === "pt") ? "EN" : "PT";
+    document.getElementById("lang-btn").innerText = (idiomaAtual === "pt") ? "EN" : "PT"; 
 
     // busca todos os elementos que têm o data-i18n
     const elementos = document.querySelectorAll("[data-i18n]");
@@ -97,7 +97,7 @@ function alternarIdioma() {
         
         // verifica se a chave existe no dicionario
         if (traducoes[idiomaAtual][chave]) {
-            el.innerText = traducoes[idiomaAtual][chave];
+            el.innerText = traducoes[idiomaAtual][chave]; // faz a troca
         }
     });
 }

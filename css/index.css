@@ -448,10 +448,6 @@ header {
         flex-direction: column;
         gap: 8px;
     }
-
-    .educacao-ano {
-        min-width: unset;
-    }
     
     .lang-btn {
         margin: 0;
